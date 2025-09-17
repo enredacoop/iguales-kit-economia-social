@@ -1,0 +1,72 @@
+[
+  {
+    "component": "HeroPages",
+    "props": {
+      "id": "hero-pages-iguales",
+      "title": "Iguales",
+      "subtitle": "<span class='font-semibold'>Una herramienta para avanzar hacia la igualdad real en tu entidad</span></br>Evalúa y mejora la igualdad de forma sencilla.",
+      "bgColor": "iguales",
+      "bgImage": {
+        "src": "hero-iguales-formas.png",
+        "alt": "Iguales Imagenes Fondo"
+      },
+      "button": {
+        "label": "comenzar autodiagnóstico",
+        "link": "",
+        "color": "button"
+      }
+    }
+  },
+  {
+    "component": "SectionWithCardsAndForm",
+    "props": {
+      "id": "como-funciona-iguales",
+      "title": "¿Cómo funciona?",
+      "description": "Responde un formulario y recibe un itinerario con propuestas adaptadas a tu entidad.",
+      "display": "col-4",
+      "bgColor": "iguales",
+      "cardsType": "transparent",
+      "cards": [
+        {
+          "color": "transparent",
+          "title": "¿Qué es iguales?",
+          "description": "Es una herramienta de autodiagnóstico que te ayuda a conocer el grado de igualdad de género en tu entidad."
+        },
+        {
+          "color": "transparent",
+          "title": "¿Por qué hacerlo?",
+          "description": "Porque avanzar en igualdad es avanzar en democracia, sostenibilidad y bienestar organizativo."
+        },
+        {
+          "color": "transparent",
+          "title": "¿Qué evalúa?",
+          "description": "Las dimensiones del Plan de Igualdad alineadas con las metas del ODS 5 (igualdad de género)."
+        },
+        {
+          "color": "transparent",
+          "title": "¿Qué obtienes?",
+          "description": "Un diagnóstico con recomendaciones para mejorar en tu día a día como entidad."
+        }
+      ]
+    }
+  },
+  {
+    "component": "TextWithIconAndButtons",
+    "props": {
+      "id": "iguales-cta",
+      "title": "¿Quieres aprender paso a paso?",
+      "subtitle": "Accede al aula virtual para formarte de forma sencilla en el uso de la herramienta. Conoce los fundamentos de la igualdad organizativa y aprende a identificar oportunidades de mejora en tu entidad.",
+      "bgColor": "iguales",
+      "icon": "scale.svg",
+      "bgImage": {
+        "src": "hero-iguales-formas.png",
+        "alt": "Iguales Imagenes Fondo"
+      },
+      "button": {
+        "label": "Empezar curso",
+        "link": "",
+        "color": "button"
+      }
+    }
+  }
+]

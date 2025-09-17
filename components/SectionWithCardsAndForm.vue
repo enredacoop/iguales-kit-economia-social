@@ -1,0 +1,72 @@
+<template>
+  <section 
+  :id="id"
+  class="flex flex-col gap-8 justify-center items-center rounded-3xl mb-8 px-4 pt-12 pb-16 md:p-16 md:pb-24"
+  :class="{
+    'bg-gradient-conic-cards': bgColor === 'gradient-conic',
+    'bg-gradient-conic-green': bgColor === 'gradient-conic-green',
+    'bg-linear-to-b from-consumo-extra-light to-background-light': bgColor === 'consumo',
+    'bg-linear-to-b from-iguales-extra-light to-background-light': bgColor === 'iguales',
+    'bg-linear-to-b from-aula-extra-light to-background-light': bgColor === 'aula',
+    'bg-linear-to-b from-certifica-light to-background-light': bgColor === 'certifica',
+    'bg-linear-to-b from-foro-light to-background-light': bgColor === 'foro',
+    'bg-linear-to-b from-ods-extra-light to-background-light': bgColor === 'ods',
+  }">
+    <ul  class="grid grid-cols-12 gap-8 ">
+      <li 
+        v-for="(item, index) in cards" :key="`cards-${id}-${index}`" class=""
+        :class="{
+          'col-span-12 lg:col-span-6': display === 'col-2',
+          'col-span-12 md:col-span-6 lg:col-span-4': display === 'col-3',
+          'col-span-12 lg:col-span-4': display === 'col-3-transparent',
+          'col-span-12 md:col-span-6 lg:col-span-3': display === 'col-4',
+        }">
+        <CardTool
+          v-if="cardsType === 'colored' || cardsType === 'number' || cardsType === 'transparent'"
+          :color="item.color"
+          :title="item.title"
+          :description="item.description"
+          :image="item.image"
+          :link="item.link"
+          :number="item.number"
+          class=""
+        />
+      </li>
+    </ul>
+    <div class="w-full min-h-96 bg-background-extra-light rounded-3xl flex justify-center items-center">
+      <h1 class="text-center text-2xl font-bold">Formulario</h1>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  props: {
+    id: {
+      type: String,
+      default: "",
+    },
+    titlePosition: {
+      type: String,
+      default: "center",
+    },
+    display: {
+      type: String,
+      default: "col-4",
+    },
+    bgColor: {
+      type: String,
+      default: "",
+    },
+    cardsType: {
+      type: String,
+      default: "transparent", // 'colored', 'number', 'transparent'
+    },
+    cards: {
+      type: Array,
+      default: () => [],
+    }
+  },
+  
+};
+</script>

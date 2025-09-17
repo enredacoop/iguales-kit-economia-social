@@ -1,0 +1,9 @@
+[
+  {
+    "component": "HeroHome",
+    "props": {
+      "title": "Benvingut al Kit",
+      "subtitle": "Tot per a l'economia social"
+    }
+  }
+]
