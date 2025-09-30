@@ -3,7 +3,7 @@
     class="flex flex-col gap-4 rounded-3xl"
     :class="{
       'border-4 border-white min-h-64 md:min-h-full max-w-80 sm:max-w-full': color === 'number',
-      'border-4 border-white min-h-20.9 md:min-h-full max-h-full max-w-80 sm:max-w-full': color === 'transparent',
+      'border-4 border-white  md:min-h-full max-h-full sm:max-w-full': color === 'transparent',
       'shadow-tool-card hover:border-4 border-white transition-all duration-300 ease-in-out min-h-22.3 sm:min-h-21.8 min-w-full lg:min-w-80 max-w-fit sm:max-w-80 w-fit': color !== 'transparent' && color !== 'number',
       'bg-linear-to-t from-consumo-base  to-consumo-light hover:to-consumo-extra-light': color === 'consumo',
       'bg-linear-to-t from-iguales-base to-iguales-light hover:to-iguales-extra-light': color === 'iguales',

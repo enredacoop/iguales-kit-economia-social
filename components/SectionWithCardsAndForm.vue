@@ -1,7 +1,7 @@
 <template>
   <section 
   :id="id"
-  class="flex flex-col gap-8 justify-center items-center rounded-3xl mb-8 px-4 pt-12 pb-16 md:p-16 md:pb-24"
+  class="flex flex-col gap-8 justify-center items-center rounded-3xl mb-8 px-8 md:px-4 pt-12 pb-16 md:p-16 md:pb-24"
   :class="{
     'bg-gradient-conic-cards': bgColor === 'gradient-conic',
     'bg-gradient-conic-green': bgColor === 'gradient-conic-green',
@@ -34,7 +34,7 @@
       </li>
     </ul>
     <div class="relative w-full min-h-96 h-[40rem] bg-background-extra-light rounded-3xl flex justify-center items-center">
-      <iframe class="absolute top-0 w-full h-full" src="https://form.iguales.kit-eco.social/" />
+      <iframe class="absolute top-0 w-full h-full rounded-3xl" src="https://form.iguales.kit-eco.social/" />
     </div>
   </section>
 </template>
