@@ -33,8 +33,10 @@
         />
       </li>
     </ul>
-    <div class="w-full min-h-96 bg-background-extra-light rounded-3xl flex justify-center items-center">
+    <div class="relative w-full min-h-96 h-[40rem] bg-background-extra-light rounded-3xl flex justify-center items-center">
+    <!-- CHANGE TO iframe -->
       <h1 class="text-center text-2xl font-bold">Formulario</h1>
+      <!-- <iframe class="absolute top-0 w-full h-full" src="https://form.iguales.kit-eco.social/" /> -->
     </div>
   </section>
 </template>
