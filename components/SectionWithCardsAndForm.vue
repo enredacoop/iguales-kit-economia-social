@@ -1,17 +1,7 @@
 <template>
   <section 
   :id="id"
-  class="flex flex-col gap-8 justify-center items-center rounded-3xl mb-8 px-8 md:px-4 pt-12 pb-16 md:p-16 md:pb-24"
-  :class="{
-    'bg-gradient-conic-cards': bgColor === 'gradient-conic',
-    'bg-gradient-conic-green': bgColor === 'gradient-conic-green',
-    'bg-linear-to-b from-consumo-extra-light to-background-light': bgColor === 'consumo',
-    'bg-linear-to-b from-iguales-extra-light to-background-light': bgColor === 'iguales',
-    'bg-linear-to-b from-aula-extra-light to-background-light': bgColor === 'aula',
-    'bg-linear-to-b from-certifica-light to-background-light': bgColor === 'certifica',
-    'bg-linear-to-b from-foro-light to-background-light': bgColor === 'foro',
-    'bg-linear-to-b from-ods-extra-light to-background-light': bgColor === 'ods',
-  }">
+  class="flex flex-col gap-8 justify-center items-center rounded-3xl mb-8 px-2 md:px-4 pt-12 pb-16 md:p-16 md:pb-24 bg-gradient-iguales">
     <ul  class="grid grid-cols-12 gap-8 ">
       <li 
         v-for="(item, index) in cards" :key="`cards-${id}-${index}`" class=""
@@ -70,3 +60,9 @@ export default {
   
 };
 </script>
+
+<style scoped>
+.bg-gradient-iguales {
+  background: linear-gradient(180deg, #E9D2F9 0%, var(--Background--bg-light, #F9F4F2) 100%);
+}
+</style>

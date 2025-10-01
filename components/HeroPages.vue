@@ -22,11 +22,11 @@
     <div class=" flex flex-col items-center z-10 gap-6">
       <h1 class="font-bold max-w-4xl">{{ title }}</h1>
       <p class="text-2xl-custom max-w-3xl" v-html="subtitle"></p>
-      <NuxtLink v-if="button" :to="button.link">
+      <!-- <NuxtLink v-if="button" :to="button.link">
         <ButtonCTA :color="button.color" class="uppercase mt-6">
           {{ button.label }}
         </ButtonCTA>
-      </NuxtLink>
+      </NuxtLink> -->
     </div>
   </section>
 </template>

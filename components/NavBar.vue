@@ -14,7 +14,7 @@
       <!-- Desktop menu -->
       <ul class="hidden md:flex items-center gap-6 font-semibold text-sm-custom">
         <li><NuxtLink :to="`/${langcode}/`" class="hover:bg-button-hover hover:text-white p-2 rounded-lg">INICIO</NuxtLink></li>
-        <li><NuxtLink to="#" class="hover:bg-button-hover hover:text-white p-2 rounded-lg">GUÍA PASO A PASO</NuxtLink></li>
+        <li><NuxtLink to="https://aula.kit-eco.social/" class="hover:bg-button-hover hover:text-white p-2 rounded-lg">GUÍA PASO A PASO</NuxtLink></li>
         <li><NuxtLink to="https://www.kit-eco.social/es/" class="hover:bg-button-hover hover:text-white p-2 rounded-lg">KIT-ECO.SOCIAL</NuxtLink></li>
        
       </ul>
@@ -40,7 +40,7 @@
     <div v-show="menuIsOpen" class="lg:hidden p-5 bg-gradient-conic rounded-3xl min-h-svh">
         <ul class="space-y-4 text-sm-custom text-end w-fit ml-auto">
           <li class="p-2"><NuxtLink :to="`/${langcode}/`">INICIO</NuxtLink></li>
-          <li class="p-2"><NuxtLink to="#">GUÍA PASO A PASO</NuxtLink></li>
+          <li class="p-2"><NuxtLink to="https://aula.kit-eco.social/">GUÍA PASO A PASO</NuxtLink></li>
           <li class="p-2"><NuxtLink to="https://www.kit-eco.social/es/">KIT-ECO.SOCIAL</NuxtLink></li>
         </ul>
       </div>

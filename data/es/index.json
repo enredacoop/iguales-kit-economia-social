@@ -57,14 +57,14 @@
       "title": "¿Quieres aprender paso a paso?",
       "subtitle": "Accede al aula virtual para formarte de forma sencilla en el uso de la herramienta. Conoce los fundamentos de la igualdad organizativa y aprende a identificar oportunidades de mejora en tu entidad.",
       "bgColor": "iguales",
-      "icon": "scale.svg",
+      "icon": "graduation-cap.svg",
       "bgImage": {
         "src": "hero-iguales-formas.png",
         "alt": "Iguales Imagenes Fondo"
       },
       "button": {
         "label": "Empezar curso",
-        "link": "",
+        "link": "https://aula.kit-eco.social/",
         "color": "button"
       }
     }
